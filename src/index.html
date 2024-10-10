@@ -1,0 +1,92 @@
+<html>
+<head>
+    <title>Dice Game</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(135deg, #e66465, #9198e5);
+            font-family: 'Arial', sans-serif;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 60%;
+            height: 50%;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+            padding: 20px;
+        }
+        .player {
+            flex: 1;
+            text-align: center;
+            color: #333;
+        }
+        .player h1 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+        .player .score {
+            font-size: 4rem;
+            color: #e66465;
+            margin-bottom: 20px;
+        }
+        .player .current {
+            background: #e66465;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 1.5rem;
+        }
+        .controls {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .controls button {
+            background: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 10px;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            font-size: 1rem;
+            display: flex;
+            align-items: center;
+        }
+        .controls button i {
+            margin-right: 10px;
+        }
+        .controls button:hover {
+            background: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="player">
+            <h1>PLAYER 1</h1>
+            <div class="score">0</div>
+            <div class="current">CURRENT<br>0</div>
+        </div>
+        <div class="controls">
+            <button><i class="fas fa-plus-circle"></i>NEW GAME</button>
+            <button><i class="fas fa-dice"></i>ROLL DICE</button>
+            <button><i class="fas fa-hand-paper"></i>HOLD</button>
+        </div>
+        <div class="player">
+            <h1>PLAYER 2</h1>
+            <div class="score">0</div>
+            <div class="current">CURRENT<br>0</div>
+        </div>
+    </div>
+</body>
+</html>
